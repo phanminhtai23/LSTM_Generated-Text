@@ -112,13 +112,13 @@ def main():
     st.markdown(
         "Dữ liệu dùng để huấn luyện: [**see here**](https://vi.wikipedia.org/wiki/Elon_Musk)")
     st.markdown(
-        "Độ chính xác trên tập train: **88,8%**")
+        "Độ chính xác trên tập train: **89,4%**")
 
     text_input = st.text_area(
-        "Nhập chuỗi từ bạn muốn model sinh ra tiếp (tiếng việt, đề xuất là: 3 từ): ", height=100, key="text_area", placeholder="VD: Elon theo học")
+        "Nhập chuỗi từ bạn muốn model sinh ra tiếp (tiếng Việt, đề xuất là 3 từ): ", height=100, key="text_area", placeholder="ví dụ: Elon theo học")
 
     total_words_wants_to_generating = st.text_input(
-        "Bạn muốn nhận output từ model bao nhiêu từ ? (Nếu để trống, mặc định 10 từ): ", placeholder="VD: 5")
+        "Bạn muốn nhận output từ model bao nhiêu từ ? (Nếu để trống, mặc định 10 từ): ", placeholder="ví dụ: 5")
     
     convert_button = st.button("Generating")
 
